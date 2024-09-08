@@ -126,7 +126,6 @@
 		}
 		h8 {
 		color: black;
-        font-weight: bold;
 		font-size: 1.0rem;
         background-color: white;
 		}
@@ -147,8 +146,8 @@
             margin-bottom: 0.5rem;
         }
         footer {
-            background-color: #1f2937;
-            color: white;
+            background-color: white;
+            color: #000080;
             padding: 1rem 0;
             margin-top: 3rem;
             text-align: center;
@@ -179,7 +178,7 @@
 
 		/* Change the color of links on hover */
 		.topnav a:hover {
-		  background-color: #000080;
+		  background-color: #ddd;
 		  color: white;
 		}
 
@@ -201,10 +200,21 @@
 		  width:100px;
 		  height:20px;
 		}
+		
+		
 		.carousel {
-		   width:700px;
-		   height:430px;
+		  position: relative;
+		  width: 700px;
+		  height: 405px;
+		}
+
+		.carousel .carousel-indicators button {
+			width: 7px;
+		    height: 7px;
+		    border-radius: 100%;
 		 }
+		 
+		 
 		@media only screen and (min-width: 701px) {
 		  /* hide the hamburger */
 		  .navbar {
@@ -266,10 +276,16 @@
 
 <!-- Create a top menu and it is set only for wide screens-->
 <div class="topnav">
-  <a class="active" href="#home">Theo Glashier</a>
-  <a href="#Projects">Projects</a>
-  <a href="#Papers">Papers</a>
-  <a href="#About">About</a>
+	<a class="active" href="#home">Theo Glashier</a>
+	<a href="#Projects">Projects</a>
+	<a href="#Papers">Papers</a>
+	<a href="#About">About</a>
+	<ul class="nav justify-content-end">
+	<a href="https://www.linkedin.com/in/theo-glashier-55b884171/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+	<a href="https://scholar.google.co.uk/citations?user=vmPWHDAAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
+	<a href="https://www.researchgate.net/profile/Theo-Glashier" target="_blank" title="Research Gate"><i class="fab fa-researchgate"></i></a>
+	<a href="https://orcid.org/my-orcid?orcid=0000-0003-4513-8022" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+	<ul/>
 </div>
 	<p></p>
 	<div class="content-container">
@@ -374,11 +390,11 @@
 			
 			<div class="carousel-item">
 			  <img src="MX3D Bridge Amsterdam Feb 2022 photo shoot_compressed.JPG" class="d-block w-100" alt="...">
-			   <div class="text-left d-md-block">
-				<h7>Location: Amsterdam, the Netherlands</h7>
-			  </div>
 			  <div class="text-left d-md-block">
 				<h8>Photographing the full structure.</h8>
+			  </div>
+			  <div class="text-left d-md-block">
+				<h7>Location: Amsterdam, the Netherlands</h7>
 			  </div>
 			  </div>
 			
@@ -432,7 +448,13 @@
 			<span class="visually-hidden">Next</span>
 		  </button>
 		</div>
+		
+
     </main>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
 
     <footer>
         <div class="content-container">
