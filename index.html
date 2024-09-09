@@ -164,6 +164,11 @@
 		  text-decoration: none;
 		  font-size: 17px;
 		}
+		.current{
+			background-color:#ddd;
+			border-top:2px solid #ddd;
+			color: white;
+		}
 
 		/* Style the links inside the navigation bar */
 		.topnav a {
@@ -177,15 +182,22 @@
 
 		/* Change the color of links on hover */
 		.topnav a:hover {
-		  background-color: #ddd;
-		  color: white;
-		}
-
-		/* Add a color to the active/current link */
-		.topnav a.active {
 		  background-color: #000080;
 		  color: white;
+		.fa-linkedin {
+			color: white;
 		}
+		.fa-graduation-cap {
+			color: white;
+		}
+		.fa-researchgate {
+			color: white;
+		}
+		.fa-orcid {
+			color: white;
+		}
+		}
+		
 		.fab {
 		font-size: 24px;
 		color: #000080;
@@ -194,6 +206,9 @@
 		font-size: 24px;
 		color: #000080;
 		}
+		  
+		
+		
 		.mailto{
 		  display:block;
 		  width:100px;
@@ -345,7 +360,7 @@
 
 <!-- Create a top menu and it is set only for wide screens-->
 <div class="topnav">
-	<a class="active" href="index.html">Theo Glashier</a>
+	<a href="index.html" class="current">Theo Glashier</a>
 	<a href="projects.html">Projects</a>
 	<a href="papers.html">Papers</a>
 	<a href="about.html">About</a>
