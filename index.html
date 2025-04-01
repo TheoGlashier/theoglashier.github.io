@@ -302,6 +302,21 @@
 		  }
 		}
 		
+		.hide {
+		  display: none;
+		}
+		.myDIV:hover + .hide {
+		  display: inline-block;
+		  color: black;
+		}
+		  
+		.label:after{
+			content:'t.glashier**@imperial.ac.uk';
+		}
+		.label:hover:after{
+			content:'t.glashier21@imperial.ac.uk';
+		}
+		
     </style>
 </head>
 
@@ -389,7 +404,7 @@
 				<p style="font-size: 1rem;">Centre for Infrastructure Materials</p>
 				<p style="font-size: 1rem;">Department of Civil and Environmental Engineering</p>
 				<p style="font-size: 1rem;">Imperial College London</p>
-				<p style="font-size: 1rem;">Email: <a href="mailto:t.glashier21@imperial.ac.uk">t.glashier21@imperial.ac.uk</a></p>
+				<p style="font-size: 1rem;">Email: <a href="mailto:t.glashier21@imperial.ac.uk"><span class="label"></span></a> </p>
 
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 				<div class="social-icons">
@@ -418,6 +433,10 @@
 		<p style="margin-bottom:1cm;text-align:center;text-align:justify;"></p>
 		<p style="text-align:center;">Download my CV <a href="CV/CV_TheoGlashier.pdf" target="_blank" download>here</a>.</p>
 		<p style="margin-bottom:2cm;"></p>
+		
+		
+		<!-- <div class="myDIV"><a href="mailto:t.glashier21@imperial.ac.uk">Email:</a></div>
+		<p class="hide">t.glashier21@imperial.ac.uk</p> -->
 		
 
     <footer>
