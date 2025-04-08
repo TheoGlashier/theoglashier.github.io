@@ -41,6 +41,12 @@
             height: 210px;
             margin-right: 30px;
         }
+		.profile-imagesmall {
+            width: 128px;
+            height: 210px;
+            margin-right: 30px;
+        }		
+		
         .profile-info {
             text-align: left;
 			color: black
@@ -288,6 +294,16 @@
 		  .topnav {
 			display: block;
 		  }
+		  
+		  /* show large profile picture */
+		  .profile-image {
+			display: block;
+		  }
+		  /* hide small profile picture */
+		  .profile-imagesmall {
+			display: none;
+		  }
+		  
 		}
 		/* if browser window is small (max-width) */
 		
@@ -300,6 +316,16 @@
 		  .topnav {
 			display: none;
 		  }
+		  
+		  /* show large profile picture */
+		  .profile-imagesmall {
+			display: block;
+		  }
+		  /* hide small profile picture */
+		  .profile-image {
+			display: none;
+		  }
+		  
 		}
 		
 		.hide {
@@ -398,6 +424,7 @@
 	<div class="content-container">
 		<div class="profile-container">
 			<img src="bridge_walking_pic2.jpg" alt="Theo Glashier" class="profile-image">
+			<img src="bridge_walking_pic3.jpg" alt="Theo Glashier" class="profile-imagesmall">
 			<div class="profile-info">
 				<h1>Theo Glashier</h1>
 				<p style="font-size: 1rem;">PhD student</p>
