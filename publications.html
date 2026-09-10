@@ -41,12 +41,6 @@
             height: 210px;
             margin-right: 30px;
         }
-		.profile-imagesmall {
-            width: 128px;
-            height: 210px;
-            margin-right: 30px;
-        }		
-		
         .profile-info {
             text-align: left;
 			color: black
@@ -267,8 +261,7 @@
 			color: white;
 		}
 		}
-		
-		
+	
 		/* Normal color of links of icon links */
 		.fa-linkedin {
 			color: #000080;
@@ -294,16 +287,6 @@
 		  .topnav {
 			display: block;
 		  }
-		  
-		  /* show large profile picture */
-		  .profile-image {
-			display: block;
-		  }
-		  /* hide small profile picture */
-		  .profile-imagesmall {
-			display: none;
-		  }
-		  
 		}
 		/* if browser window is small (max-width) */
 		
@@ -316,39 +299,7 @@
 		  .topnav {
 			display: none;
 		  }
-		  
-		  /* show large profile picture */
-		  .profile-imagesmall {
-			display: block;
-		  }
-		  /* hide small profile picture */
-		  .profile-image {
-			display: none;
-		  }
-		  
 		}
-		
-		.hide {
-		  display: none;
-		}
-		.myDIV:hover + .hide {
-		  display: inline-block;
-		  color: black;
-		}
-		  
-		.label:after{
-			content:'t.glash**@imperial.ac.uk';
-		}
-		.label:hover:after{
-			content:'t.glashier21@imperial.ac.uk';
-		}
-		.label2:after{
-			content:'tglash**@gmail.com';
-		}
-		.label2:hover:after{
-			content:'tglashier@gmail.com';
-		}
-		
 		
     </style>
 </head>
@@ -414,11 +365,12 @@
 
 <!-- Create a top menu and it is set only for wide screens-->
 <div class="topnav">
-	<a href="index.html" class="current">Home</a>
+	<a href="index.html">Home</a>
 	<a href="projects.html">Projects</a>
-	<a href="publications.html">Publications</a>
+	<a href="publications.html" class="current">Publications</a>
 	<a href="about.html">About</a>
 	<ul class="nav justify-content-end">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<a href="https://www.linkedin.com/in/theo-glashier-55b884171/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
 	<a href="https://scholar.google.co.uk/citations?user=vmPWHDAAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
 	<a href="https://www.researchgate.net/profile/Theo-Glashier" target="_blank" title="Research Gate"><i class="fab fa-researchgate"></i></a>
@@ -426,53 +378,32 @@
 	<a href="https://github.com/TheoGlashier" target="_blank" title="Github"><i class="fab fa-github"></i></a>
 	<ul/>
 </div>
-
 	<p></p>
-	<div class="content-container">
-		<div class="profile-container">
-			<img src="bridge_walking_pic2.jpg" alt="Theo Glashier" class="profile-image">
-			<img src="bridge_walking_pic3.jpg" alt="Theo Glashier" class="profile-imagesmall">
-			<div class="profile-info">
-				<h1>Theo Glashier</h1>
-				<p style="font-size: 1rem;">Research Associate</p>
-				<p style="font-size: 1rem;">Centre for Infrastructure Materials</p>
-				<p style="font-size: 1rem;">Department of Civil and Environmental Engineering</p>
-				<p style="font-size: 1rem;">Imperial College London</p>
-				<p style="font-size: 1rem;">Email: <a href="mailto:t.glashier21@imperial.ac.uk"><span class="label"></span></a> </p>
-				<p style="font-size: 1rem;">Personal: <a href="mailto:tglashier@gmail.com"><span class="label2"></span></a> </p>
 
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-				<div class="social-icons">
-					<a href="https://www.linkedin.com/in/theo-glashier-55b884171/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-					<a href="https://scholar.google.co.uk/citations?user=vmPWHDAAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
-					<a href="https://www.researchgate.net/profile/Theo-Glashier" target="_blank" title="Research Gate"><i class="fab fa-researchgate"></i></a>
-					<a href="https://orcid.org/my-orcid?orcid=0000-0003-4513-8022" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-					<a href="https://github.com/TheoGlashier" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-				</div>
-			</div>
-		</div>
-    </div>
-	
-	
-	
+
+
 	
     <main class="content-container">
-	    <section id="research-interests">
-		<p> </p>
-            <p>
-            "I am an early-career structural engineer and structural health monitoring (SHM) researcher, focused on establishing an independent research career at the interface of civil engineering and computer science. My research combines long-term infrastructure monitoring, signal processing, data-driven SHM and physics-informed machine learning, with direct experience of operational bridges and large-scale sensor networks. My aim is to improve safer, more resilient and more sustainable ageing infrastructure."
-            </p>
-			<p><b>Keywords:</b> Structural engineering; Structural health monitoring; Damage identification; Environmental and operational variability (EOV); Structural thermal response prediction; Machine learning.</p>
+	<h1>List of publications</h1>
+        <b>Ask me for published versions <a href="mailto:tglashier@gmail.com?subject=Published version request (from GitHub)">here</a></b></p>
+		<br>
+		
+        <h3>Journal articles</h3>
+		<p>Reynolds, T., <b>Glashier, T.</b>, Cameron, J., Kromanis, R., Zhang, P.,Wynne, Z., Tessier, A., Shuldiner, A., Cammers-Goodwin, S., Vahdatikhaki, F., Nagenborg, M., Siderius, K. and Buchanan, C. G. J. (2025) ‘Operational data collection and analysis for a smart 3D printed footbridge’, <i>Smart and Sustainable Built Environment</i>, pp. 1-29. doi: <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/558619342/MX3D_bridge_collaborative_paper_-_SASBE_-_author_accepted.pdf">10.1108/SASBE-04-2025-0167</a>.
+		<p><b>Glashier, T.</b>, Kromanis, R. and Buchanan, C. (2024) ‘Temperature-based measurement interpretation of the MX3D Bridge’, <i>Engineering Structures</i>, 305, p. 116736. doi: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0141029623011513?pes=vor">10.1016/j.engstruct.2023.116736</a>.</p>
+		<p><b>Glashier, T.</b>, Kromanis, R. and Buchanan, C. (2024) ‘An iterative regression-based thermal response prediction methodology for instrumented civil infrastructure’, <i>Advanced Engineering Informatics</i>, 60, p. 102347. doi:<a href="https://www.sciencedirect.com/science/article/abs/pii/S1474034623004755?via%3Dihub">10.1016/j.aei.2023.102347</a>.</p>
+		
+		<h3>Thesis</h3>
+		<p><b>Glashier, T.</b> (2025) ‘Temperature-based measurement interpretation of critical civil infrastructure'. Imperial College London. doi: <a href="https://spiral.imperial.ac.uk/entities/publication/2539d664-1ed3-4803-9b47-68c816c41f68">10.25560/125844</a>.
+ 		
+        <h3>Conferences</h3>
+		<p><b>Glashier, T.</b> (2023) ‘Predicting the environmental response of critical infrastructure, using the first metal 3D printed structure as a case study’, in <i>Proceedings of the 25th Young Researchers Conference. Institution of Structural Engineers</i>, pp. 62–63. Available at: <a href="https://www.istructe.org/getattachment/Resources/Training/Young-researchers-conference-2023/Young-researchers-conference-2023-Proceedings.pdf">https://www.istructe.org/.../Young-researchers-conference-2023-Proceedings.pdf</a>.</p>
+		<p><b>Glashier, T.</b>, Buchanan, C. and Kromanis, R. (2024) ‘Thermal response prediction of the MX3D bridge’s operational dataset’, in Jensen, J. S., Frangopol, D. M., and Schmidt, J. W. (eds) <i>Bridge Maintenance, Safety, Management, Digitalization and Sustainability.</i> London: CRC Press, pp. 2511–2519. doi: <a href="https://www.taylorfrancis.com/books/oa-edit/10.1201/9781003483755/bridge-maintenance-safety-management-digitalization-sustainability-jens-sandager-jensen-dan-frangopol-jacob-wittrup-schmidt?_gl=1*3if206*_gcl_au*MjAyNjQyNTA2Mi4xNzE2MzY3MjI4*_ga*NDk0MzQzNC4">10.1201/9781003483755-299</a>.</p>
+		<p><b>Glashier, T.</b>, Kromanis, R. and Buchanan, C. (2024) ‘Temperature-based damage detection for the commissioning dataset of the MX3D Bridge’, in <i>Proceedings of the 11th European Workshop on Structural Health Monitoring (EWSHM 2024)</i>, June 10-13, 2024. Postdam, Germany: e-Journal of Nondestructive Testing. doi: <a href="https://www.ndt.net/search/docs.php3?id=29866">10.58286/29866</a>. 
+		
+		<h3>Archives</h3>
+		<p>Cameron, J., Tessier, A., Buchanan, C., Wynne, Z., Reynolds, T., <b>Glashier, T.</b>, Kromanis, R., Cammers-Goodwin, S., Bibliowicz, J. and Shuldiner, A. (2024) ‘Data Archive from the MX3D Bridge in Amsterdam.’, Available at: <a href="https://zenodo.org/records/10641551">https://zenodo.org/records/10641551</a>.</p>
 
-        </section>
-		<p style="margin-bottom:1cm;text-align:center;text-align:justify;"></p>
-		<p style="text-align:center;">Download my CV <a href="CV/CV_TheoGlashier.pdf" target="_blank" download>here</a>.</p>
-		<p style="margin-bottom:2cm;"></p>
-		
-		
-		<!-- <div class="myDIV"><a href="mailto:t.glashier21@imperial.ac.uk">Email:</a></div>
-		<p class="hide">t.glashier21@imperial.ac.uk</p> -->
-		
 
     <footer>
         <div class="content-container">
@@ -489,8 +420,5 @@ function sendEmail()
     window.location.assign("mailto:t.glashier21@imperial.ac.uk");
 }
 </script>
-
-<div id="sfc8lne4h9kgm2c2955yxxe2hxu13gl15cg"></div>
-<script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=8lne4h9kgm2c2955yxxe2hxu13gl15cg&down=async" async></script>
 
 </html>
