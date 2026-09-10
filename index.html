@@ -349,6 +349,25 @@
 			content:'tglashier@gmail.com';
 		}
 		
+		#fun-draggable {
+		  position: fixed;
+		  width: 55px;
+		  height: 55px;
+		  object-fit: contain;
+
+		  left: 30px;
+		  bottom: 30px;
+
+		  cursor: grab;
+		  user-select: none;
+		  -webkit-user-drag: none;
+
+		  z-index: 9999;
+		}
+
+		#fun-draggable:active {
+		  cursor: grabbing;
+		}
 		
     </style>
 </head>
@@ -462,7 +481,7 @@
             <p>
             "I am an early-career structural engineer and structural health monitoring (SHM) researcher, focused on establishing an independent research career at the interface of civil engineering and computer science. My research combines long-term infrastructure monitoring, signal processing, data-driven SHM and physics-informed machine learning, with direct experience of operational bridges and large-scale sensor networks. My aim is to improve safer, more resilient and more sustainable ageing infrastructure."
             </p>
-			<p><b>Keywords:</b> Structural engineering; Structural health monitoring; Damage identification; Environmental and operational variability (EOV); Structural thermal response prediction; Machine learning.</p>
+			<p><b>Keywords:</b> Structural engineering; Signal processing; Structural health monitoring; Damage identification; Environmental and operational variability (EOV); Structural thermal response prediction; Machine learning.</p>
 
         </section>
 		<p style="margin-bottom:1cm;text-align:center;text-align:justify;"></p>
@@ -480,17 +499,67 @@
         </div>
     </footer>
 
-    
+
+	<img
+	  id="fun-draggable"
+	  src="bridge-svgrepo-com.svg"
+	  alt=""
+	  draggable="false"
+	/>
+
+<script>
+const draggable = document.getElementById("fun-draggable");
+
+let dragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+draggable.addEventListener("pointerdown", (event) => {
+  dragging = true;
+
+  const rect = draggable.getBoundingClientRect();
+
+  offsetX = event.clientX - rect.left;
+  offsetY = event.clientY - rect.top;
+
+  draggable.setPointerCapture(event.pointerId);
+
+  // Switch from bottom positioning to top positioning
+  draggable.style.bottom = "auto";
+});
+
+draggable.addEventListener("pointermove", (event) => {
+  if (!dragging) return;
+
+  let x = event.clientX - offsetX;
+  let y = event.clientY - offsetY;
+
+  // Keep the icon inside the browser window
+  const maxX = window.innerWidth - draggable.offsetWidth;
+  const maxY = window.innerHeight - draggable.offsetHeight;
+
+  x = Math.max(0, Math.min(x, maxX));
+  y = Math.max(0, Math.min(y, maxY));
+
+  draggable.style.left = `${x}px`;
+  draggable.style.top = `${y}px`;
+});
+
+draggable.addEventListener("pointerup", () => {
+  dragging = false;
+});
+</script>
 </body>
 
 <script>
 function sendEmail() 
 {
-    window.location.assign("mailto:t.glashier21@imperial.ac.uk");
+    window.location.assign("mailto:t.glashier@gmail.com");
 }
 </script>
 
 <div id="sfc8lne4h9kgm2c2955yxxe2hxu13gl15cg"></div>
 <script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=8lne4h9kgm2c2955yxxe2hxu13gl15cg&down=async" async></script>
+
 
 </html>
